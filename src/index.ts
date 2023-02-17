@@ -1,6 +1,10 @@
 export class klitikijs {
   format(lastName: string): string | null {
+
+    // TODO: make this list separate file
+    // TODO: make this list csv that generate a json automatically
     let lastNameExceptions = ['καμένος', 'δευτεραίος', 'γεώργιος', 'νικόλαος'];
+
     let value = lastName.toLocaleLowerCase().trim();
 
     if (value.endsWith('ός')) {
