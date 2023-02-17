@@ -1,0 +1,34 @@
+{
+  "name": "klitikijs",
+  "version": "0.0.1",
+  "description": "Klitiki.js - Greek lastnames' Vocative - Κλητική Ελληνικών Επιθέτων",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx nodemon src/test.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json"
+  },
+  "keywords": [
+    "klitikijs",
+    "Klitiki",
+    "Vocative",
+    "greek",
+    "lastnames"
+  ],
+  "author": "Vasilis Plavos",
+  "license": "ISC",
+  "homepage": "https://github.com/vasilisplavos/klitikijs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vasilisplavos/klitikijs.git"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.4",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.9.5",
+    "ts-node": "^10.9.1"
+  }
+}
