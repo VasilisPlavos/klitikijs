@@ -1,10 +1,10 @@
 export class klitikijs {
+  
+  // TODO: make this list separate file
+  // TODO: make this list csv that generate a json automatically
+  lastNameExceptions: string[] = ['καμένος', 'δευτεραίος', 'γεώργιος', 'νικόλαος'];
+
   format(lastName: string): string | null {
-
-    // TODO: make this list separate file
-    // TODO: make this list csv that generate a json automatically
-    let lastNameExceptions = ['καμένος', 'δευτεραίος', 'γεώργιος', 'νικόλαος'];
-
     let value = lastName.toLocaleLowerCase().trim();
 
     if (value.endsWith('ός')) {
@@ -12,7 +12,7 @@ export class klitikijs {
     }
 
     if (value.endsWith('ος')) {
-      if (lastNameExceptions.includes(value)) {
+      if (this.lastNameExceptions.includes(value)) {
         return nameWithE(lastName);
       }
     }

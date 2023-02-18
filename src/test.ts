@@ -8,7 +8,8 @@ Test('Καμένος', 'Καμένε');
 Test('Δευτεραίος', 'Δευτεραίε');
 
 function Test(input: string, correctOutput: string) {
-  let output = klitikijs.prototype.format(input);
+  const vocs = new klitikijs();
+  let output = vocs.format(input);
   let result = correctOutput == output;
   console.log(`in: ${input} - out: ${output} - result: ${result}`);
 }
